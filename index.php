@@ -20,9 +20,8 @@ function compress_image($source_url, $destination_url, $quality) {
 }
 
 if (empty($images)){
-	echo "dir empty!";
-	die;
-}else{
+	die("empty dir");
+} else {
 	foreach($images as $img){
 		$source_photo = 'input/'.$img;
 		$dest_photo = 'output/'.$img;
